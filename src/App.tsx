@@ -1,17 +1,14 @@
-import { useEffect } from "react"
 import HeaderContainer from "./components/header/HeaderContainer"
+import { useThemeStore } from "./zustand/themeStore"
 
 
 function App() {
-  useEffect(() => {
-    if(!localStorage.getItem('color-theme')){
-      localStorage.setItem('color-theme', 'light')
-    }
-  },[])
-  const theme: string | null= localStorage.getItem('color-theme')
+    const {dark} = useThemeStore()
   return (
-    <div className={`dark:bg-gray-950 min-h-screen ${theme === 'dark' ? 'dark' : ''}`}>
+    <div className={`${dark ? 'dark' : ''} transition-all duration-500 ease-soft-spring`}>
+    <div className={`dark:bg-black bg-white transition-background ease-in-out duration-400 min-h-screen`}>
       <HeaderContainer />
+    </div>
     </div>
   )
 }
