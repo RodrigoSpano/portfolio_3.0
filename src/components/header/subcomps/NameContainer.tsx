@@ -12,7 +12,7 @@ const NameContainer: React.FC = () => {
           ) : "Hi, I'm Rodrigo Spano" 
         }
         </h1>
-      <p className='font-kanit font-medium dark:text-white text-black opacity-60 md:text-[1.5rem]'>{language === 'es' ? 'Desarrollador Fullstack 👨‍💻' : 'Fullstack Developer 👨‍💻'}</p>
+      <p className='font-kanit font-medium dark:text-white text-black opacity-60 md:text-[1.5rem]'>{language === 'es' ? 'Desarrollador de Software 👨‍💻' : 'Software Developer 👨‍💻'}</p>
     </div>
   )
 }
