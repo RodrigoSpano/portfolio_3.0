@@ -7,6 +7,8 @@ interface LinkStore {
 
 export const useLinkStore = create<LinkStore>()((set) => ({
   active: null,
-  toggleActive: (by) => set(() => ({ active: by })),
+  toggleActive: (by) => {
+    set({ active: by })
+  },
 }))
 

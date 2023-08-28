@@ -8,6 +8,9 @@ export default {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+    screens: {
+      middle: '855px'
+    },
     extend: {
       fontFamily: {
         adlam: 'ADLaM Display, cursive',
