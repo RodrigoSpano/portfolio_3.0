@@ -7,7 +7,7 @@ function App() {
 
   return (
     <div className={`${dark ? 'dark' : ''} transition-all duration-500 ease-soft-spring`}>
-    <div className={`dark:bg-black bg-white transition-background ease-in-out duration-400 min-h-screen`}>
+    <div className={`dark:bg-black bg-slate-100 transition-background ease-in-out duration-400 min-h-screen`}>
       <HeaderContainer />
     </div>
     </div>
