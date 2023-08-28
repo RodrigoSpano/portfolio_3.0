@@ -10,11 +10,10 @@ const HeaderContainer: React.FC = () => {
       <TogglesContainer />
       <NameContainer />
       <motion.span className='dark:text-white opacity-75 text-2xl rotate-180 absolute bottom-5 cursor-pointer'  animate={{
-        y: [0,-50,0,-40,0],
+        y: [0,-10,0,-10,0],
       }}
       transition={{
-        delay: 3,
-        repeatDelay:3,
+        delay: 1,
         duration: 1,
         repeat: Infinity,
         ease: "circIn",
