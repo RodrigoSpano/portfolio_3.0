@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
   const {active, toggleActive} = useLinkStore()
   const {language} = useLangStore()
   return (
-    <div className='hidden lg:flex flex-col gap-2 text-[#6c6761] dark:text-[#ADA79f] font-medium font-adlam'>
+    <div className='hidden lg:flex flex-col gap-2 text-[#6c6761] dark:text-[#A3A3A3] font-medium font-adlam'>
       {
         language === 'en' ? 
           navbarLinks.map((el: ILinks) => <NavLink title={el.title} value={el.title}  key={el.title} active={!!(active===el.title)} toggleActive={toggleActive}/> )

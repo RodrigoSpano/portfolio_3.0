@@ -26,8 +26,8 @@ const LanguageToggle: React.FC = () => {
   return (
 <label className={styles.container}>
   <input type="checkbox" checked={language==='es' ? true : false} onChange={handleChange}/>
-  <span className={`${styles.clipboard} dark:text-white text-black`}>En</span>
-  <span className={`${styles.clipboard_check} dark:text-white text-black`}>Es</span>
+  <span className={`${styles.clipboard}  text-black`}>En</span>
+  <span className={`${styles.clipboard_check}  text-black`}>Es</span>
 
 </label>
   )
