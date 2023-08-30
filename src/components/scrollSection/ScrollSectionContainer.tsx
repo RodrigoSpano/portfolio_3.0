@@ -19,7 +19,7 @@ const ScrollSectionContainer = () => {
           {/* <ExperienceContainer /> */}
           <ProyectsContainer />
           <SkillsContainer />
-          <Divider orientation='horizontal' />
+          <Divider orientation='horizontal' className='dark:bg-black dark:bg-opacity-60' />
           <MiniFooter />
         </ScrollShadow>
           <div  
@@ -30,6 +30,7 @@ const ScrollSectionContainer = () => {
           <ProyectsContainer />
           <SkillsContainer />
           <Divider orientation='horizontal' />
+          <MiniFooter />
         </div>
     </>
   )
