@@ -5,7 +5,7 @@ const PersonalContainer: React.FC = () => {
   const {language} = useLangStore()
 
   return (
-    <div id='about' className='dark:text-[#000] font-kanit font-medium '>
+    <div id='about' className=' dark:text-[#ddd1c3] lg:dark:text-[#000] font-kanit font-medium '>
       {
         language === 'en' ? <p>Hello! I'm a software developer who embarked on my journey in web development in 2021. My expertise spans both front-end and back-end, enabling me to create comprehensive and functional technological solutions.
 

@@ -13,10 +13,10 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
   const [up, setUp] = useState(false)
 
   return (
-    <div onMouseEnter={() => setUp(true)} onMouseLeave={() => setUp(false)} className={` transition-all duration-300 ease-linear cursor-default w-full lg:max-w-[610px] max-h-[400px] flex flex-col-reverse middle:flex-row gap-3 items-start p-4 rounded-md hover:bg-background/30 dark:hover:bg-background/10 bg-background/10 backdrop-blur-2xl `}>
+    <div onMouseEnter={() => setUp(true)} onMouseLeave={() => setUp(false)} className={`transition-all duration-300 ease-linear cursor-default w-full lg:max-w-[610px] h-auto flex flex-col-reverse middle:flex-row gap-3 items-start p-4 rounded-md hover:bg-background/30 hover:dark:bg-background/20 bg-background/10 backdrop-blur-2xl `}>
       {
         data.image ? 
-        <img src={data.image} alt={data.title} className={`w-[115px] object-contain dark:opacity-75 ${up && 'dark:opacity-100'} transition-all duration-300 ease-linear `} />
+        <img src={data.image} alt={data.title} className={`w-[115px] drop-shadow-lg object-contain dark:opacity-75 ${up && 'dark:opacity-100'} transition-all duration-300 ease-linear `} />
         : null
       }
       {/* //card body */}
@@ -38,7 +38,7 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
                 </motion.a>
         </div>
 
-        <a target='_blank' href={data.deploy ? data.deploy : data.repo} className='text-[#11181c] text-sm font-medium'>{language === 'en' ? data.description : data.descripcion}</a>
+        <a target='_blank' href={data.deploy ? data.deploy : data.repo} className={`${up && 'text-white'} transition-all duration-300 ease-linear text-[#11181c] text-sm font-medium`}>{language === 'en' ? data.description : data.descripcion}</a>
            </div>
         {/* technologies */}
         <div className='flex gap-1 items-center flex-wrap'>
