@@ -7,7 +7,7 @@ const NameContainer: React.FC = () => {
   return (
     <div className='flex flex-col items-center '>
       <img src={me} alt='dev' className='h-[100px] translate-y-4 middle:h-[150px] middle:translate-y-10 drop-shadow-lg backdrop-blur-xl opacity-70 '/>
-      <h1 className='drop-shadow-lg font-kanit font-extrabold text-[2rem] middle:text-[4.5rem] bg-clip-text text-transparent bg-gradient-to-b dark:from-[#0096c7] dark:to-[#48cae4] from-[#ffd24e] to-[#c0721f]'>
+      <h1 className='drop-shadow-lg font-kanit text-center font-extrabold text-[2rem] middle:text-[4.5rem] bg-clip-text text-transparent bg-gradient-to-b dark:from-[#0096c7] dark:to-[#48cae4] from-[#ffd24e] to-[#c0721f]'>
         {
           language === 'es' ? (
             'Hola, soy Rodrigo Spano'
