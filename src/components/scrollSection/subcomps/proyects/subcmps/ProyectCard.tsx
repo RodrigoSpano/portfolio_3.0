@@ -26,7 +26,7 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
         {/* title */}
         <div className='flex gap-1 font-kanit items-center'>
           <a href={data.deploy ? data.deploy : data.repo} target='_blank'>
-            <h4 className={`transition-all duration-300 ease-linear ${up && 'text-orange-400/90 dark:text-white'}  font-bold text-xl`}>{language === 'en' ? data.title : (data.titulo ? data.titulo : data.title )}</h4>
+            <h4 className={`transition-all duration-300 ease-linear ${up && 'text-orange-400/90 dark:text-white'}  font-bold text-md lg:text-xl`}>{language === 'en' ? data.title : (data.titulo ? data.titulo : data.title )}</h4>
           </a>
           {     data.deploy ?
                   <motion.a target='_blank' href={data.deploy} whileHover={{scale:1.2, translateY: -5}} className='cursor-pointer'>

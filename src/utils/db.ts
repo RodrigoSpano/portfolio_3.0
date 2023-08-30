@@ -1,4 +1,4 @@
-import { dbExperience, dbProyects } from "./interfaces";
+import { dbExperience, dbProyects} from "./interfaces";
 
 export const experienceDb: dbExperience[] = [
   {
