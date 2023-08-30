@@ -10,3 +10,14 @@ export interface dbExperience {
   tech: string[],
   deploy?:string
 }
+
+export interface dbProyects {
+  image: string,
+  deploy: string,
+  title: string,
+  titulo?:string,
+  description: string,
+  descripcion: string,
+  tech: string[]
+  repo:string
+}

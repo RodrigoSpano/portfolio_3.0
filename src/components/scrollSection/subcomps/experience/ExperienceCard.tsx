@@ -23,7 +23,7 @@ const ExperienceCard = ({item}: {item: dbExperience}) => {
         <div className='flex text-[#A3A3A3] font-light font-kanit gap-10 transition-all ease-linear duration-400 py-2'>
           <span className='w-[50px] font-semibold text-[#A3A3A3] opacity-75'>{item.period}</span>
           <div className='flex flex-col gap-3'>
-            <div className='text-[#11181C]'>
+          <div className='text-[#11181C] dark:text-[#d2d1d1]'>
               <div className='flex gap-2 items-center'>
                 <h4 className='text-xl font-bold'>{item.title}</h4>
                 {
@@ -35,7 +35,7 @@ const ExperienceCard = ({item}: {item: dbExperience}) => {
               </div>
               <span className='opacity-80 font-medium'>{item.position}</span>
             </div>
-            <p className='max-w-full lg:max-w-sm text-sm text-[#11181C] opacity-70'>{item.description}</p>
+            <p className='max-w-full lg:max-w-sm text-sm text-[#11181C] dark:text-white opacity-70'>{item.description}</p>
             <div className='flex gap-2 flex-wrap'>
               {
                 item.tech?.map((el:string) => <Chip key={Math.random()} color={dark ? 'default' : "warning"} variant="flat">{el}</Chip>)
@@ -55,7 +55,7 @@ const ExperienceCard = ({item}: {item: dbExperience}) => {
         <div className='flex text-[#A3A3A3] font-light font-kanit gap-10 transition-all ease-linear duration-400 py-2'>
           <span className='w-[50px] font-semibold font-[#A3A3A3] opacity-75'>{item.periodo}</span>
           <div className='flex flex-col gap-3'>
-            <div className='text-[#11181C]'>
+            <div className='text-[#11181C] dark:text-[#d2d1d1]'>
               <div className='flex gap-2 items-center'>
                 <h4 className='text-xl font-bold'>{item.titulo}</h4>
                 {
@@ -67,7 +67,7 @@ const ExperienceCard = ({item}: {item: dbExperience}) => {
               </div>
               <span className='opacity-80 font-medium'>{item.posicion}</span>
             </div>
-            <p className='max-w-full lg:max-w-sm text-sm text-[#11181C] opacity-70'>{item.descripcion}</p>
+            <p className='max-w-full lg:max-w-sm text-sm text-[#11181C] dark:text-white opacity-70'>{item.descripcion}</p>
             <div className='flex gap-2 flex-wrap'>
               {
                 item.tech?.map((el:string) => <Chip key={Math.random()} color={dark ? 'default' : "warning"} variant="flat">{el}</Chip>)
