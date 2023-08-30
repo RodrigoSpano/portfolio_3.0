@@ -36,13 +36,13 @@ export const proyectsDB: dbProyects[] = [
     tech: ['NextJs', 'open-Weather api', 'ChakraUI', 'Framer-motion']
   },
   {
-    image: '/assets/proyects/portfolio2.0.jpeg',
-    deploy: 'https://rodrigospano-portfolio-old.vercel.app/',
-    title: "Rodrigo Spano Portfolio 2.0",
-    description: 'An old portfolio built with vite.js and typescript',
-    descripcion: 'Un portfolio viejo creado con ViteJs y Typescript',
-    repo: 'https://github.com/RodrigoSpano/portfolio2.0.git',
-    tech: ['ViteJs', 'Typescript', 'TailwindCSS', 'Framer-motion']
+    image: null,
+    deploy: null,
+    title: "Ecommerce backend",
+    description: 'Backend app for an ecommerce built with Express and MongoDB',
+    descripcion: 'Aplicacion backend para una tienda online desarrollada con Express y BongoDB',
+    repo: 'https://github.com/RodrigoSpano/ecommerce-backend.git',
+    tech: ['ExpressJs', 'javascript', 'MongoDB', 'Passport']
   },
   {
     image: '/assets/proyects/nftlanding.jpeg',

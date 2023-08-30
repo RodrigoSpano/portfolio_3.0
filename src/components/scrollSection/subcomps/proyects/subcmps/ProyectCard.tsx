@@ -13,16 +13,19 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
   const [up, setUp] = useState(false)
 
   return (
-    <div onMouseEnter={() => setUp(true)} onMouseLeave={() => setUp(false)} className={` transition-all duration-300 ease-linear cursor-default w-full lg:max-w-[610px] max-h-[400px] flex gap-3 items-start p-4 rounded-md        hover:bg-background/30 dark:hover:bg-background/10 backdrop-blur-xl`}>
-      <img src={data.image} alt={data.title} className='w-[115px] object-contain' />
-
+    <div onMouseEnter={() => setUp(true)} onMouseLeave={() => setUp(false)} className={` transition-all duration-300 ease-linear cursor-default w-full lg:max-w-[610px] max-h-[400px] flex flex-col-reverse middle:flex-row gap-3 items-start p-4 rounded-md hover:bg-background/30 dark:hover:bg-background/10 bg-background/10 backdrop-blur-2xl `}>
+      {
+        data.image ? 
+        <img src={data.image} alt={data.title} className={`w-[115px] object-contain dark:opacity-75 ${up && 'dark:opacity-100'} transition-all duration-300 ease-linear `} />
+        : null
+      }
       {/* //card body */}
       <div className='flex flex-col gap-3'>
         
         <div>
         {/* title */}
         <div className='flex gap-1 font-kanit items-center'>
-          <a href={data.deploy} target='_blank'>
+          <a href={data.deploy ? data.deploy : data.repo} target='_blank'>
             <h4 className={`transition-all duration-300 ease-linear ${up && 'text-orange-400/90 dark:text-white'}  font-bold text-xl`}>{language === 'en' ? data.title : (data.titulo ? data.titulo : data.title )}</h4>
           </a>
           {     data.deploy ?
@@ -35,7 +38,7 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
                 </motion.a>
         </div>
 
-        <a target='_blank' href={data.deploy} className='text-[#11181c] text-sm font-medium'>{language === 'en' ? data.description : data.descripcion}</a>
+        <a target='_blank' href={data.deploy ? data.deploy : data.repo} className='text-[#11181c] text-sm font-medium'>{language === 'en' ? data.description : data.descripcion}</a>
            </div>
         {/* technologies */}
         <div className='flex gap-1 items-center flex-wrap'>

@@ -12,8 +12,8 @@ export interface dbExperience {
 }
 
 export interface dbProyects {
-  image: string,
-  deploy: string,
+  image: string|null,
+  deploy: string|null,
   title: string,
   titulo?:string,
   description: string,
