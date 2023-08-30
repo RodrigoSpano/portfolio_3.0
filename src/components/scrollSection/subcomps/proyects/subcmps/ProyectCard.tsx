@@ -38,7 +38,7 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
                 </motion.a>
         </div>
 
-        <a target='_blank' href={data.deploy ? data.deploy : data.repo} className={`${up && 'text-white'} transition-all duration-300 ease-linear text-[#11181c] text-sm font-medium`}>{language === 'en' ? data.description : data.descripcion}</a>
+        <a target='_blank' href={data.deploy ? data.deploy : data.repo} className={`${up && 'dark:text-white'} transition-all duration-300 ease-linear text-[#11181c] text-sm font-medium`}>{language === 'en' ? data.description : data.descripcion}</a>
            </div>
         {/* technologies */}
         <div className='flex gap-1 items-center flex-wrap'>
