@@ -26,6 +26,33 @@ export const proyectsDB: dbProyects[] = [
     tech: ['NextJs', 'Express', 'PostgreSQL', 'Redux', 'TailwindCSS']
   },
   {
+    image: '/assets/proyects/nftlanding.jpeg',
+    deploy: 'https://nfts-collection-landing.vercel.app/',
+    title: "NFTs marketplace Landing page",
+    descripcion: 'Landing page para visualizar los diferentes precios en ETH de una coleccion de NFTs, utilice animaciones 2D y modelos 3D.',
+    description: 'Landing page to display the different prices in ETH of a collection of NFTs, using 2D animations and 3D models.',
+    repo: 'https://github.com/RodrigoSpano/ROOTS-challenge.git',
+    tech: ['NextJs', 'ThreeJs', 'TailwindCSS', 'Framer-motion']
+  },
+  {
+    image: null,
+    deploy: null,
+    title: "Youtube Videos Converter",
+    descripcion: 'Pequeña app que permite descargar videos o audios de youtube.',
+    description: 'Small app that allows you to download videos or audios from Youtube.',
+    repo: 'https://github.com/RodrigoSpano/video_converter_api.git',
+    tech: ['Express', 'ytdl-core', 'Typescript']
+  },
+  {
+    image: null,
+    deploy: null,
+    title: "Ecommerce Backend",
+    description: 'Backend app for an ecommerce built with Express and MongoDB',
+    descripcion: 'Aplicacion backend para una tienda online desarrollada con Express y BongoDB',
+    repo: 'https://github.com/RodrigoSpano/ecommerce-backend.git',
+    tech: ['ExpressJs', 'javascript', 'MongoDB', 'Passport']
+  },
+  {
     image: '/assets/proyects/weather_app.jpeg',
     deploy: 'https://weather-app-spano.vercel.app/',
     title: 'Weather App',
@@ -38,19 +65,37 @@ export const proyectsDB: dbProyects[] = [
   {
     image: null,
     deploy: null,
-    title: "Ecommerce backend",
-    description: 'Backend app for an ecommerce built with Express and MongoDB',
-    descripcion: 'Aplicacion backend para una tienda online desarrollada con Express y BongoDB',
-    repo: 'https://github.com/RodrigoSpano/ecommerce-backend.git',
-    tech: ['ExpressJs', 'javascript', 'MongoDB', 'Passport']
+    title: "RickAndMorty App",
+    descripcion: '',
+    description: '',
+    repo: 'https://github.com/RodrigoSpano/rickandmorty_integration.git',
+    tech: []
   },
   {
-    image: '/assets/proyects/nftlanding.jpeg',
-    deploy: 'https://nfts-collection-landing.vercel.app/',
-    title: "NFTs marketplace Landing page",
-    descripcion: 'Landing page para visualizar los diferentes precios en ETH de una coleccion de NFTs, utilice animaciones 2D y modelos 3D.',
-    description: 'Landing page to display the different prices in ETH of a collection of NFTs, using 2D animations and 3D models.',
-    repo: 'https://github.com/RodrigoSpano/ROOTS-challenge.git',
-    tech: ['NextJs', 'ThreeJs', 'TailwindCSS', 'Framer-motion']
+    image: null,
+    deploy: null,
+    title: "Portfolio v2(old)",
+    descripcion: '',
+    description: '',
+    repo: 'https://github.com/RodrigoSpano/portfolio2.0.git',
+    tech: []
+  },
+  {
+    image: null,
+    deploy: 'https://pricing-component-rodrigo-spano.vercel.app/',
+    title: "Pricing Component",
+    descripcion: '',
+    description: '',
+    repo: 'https://github.com/RodrigoSpano/Pricing-component-FrontEndMentor.git',
+    tech: []
+  },
+  {
+    image: null,
+    deploy: 'https://fylo-landing-rodrigo-spano.vercel.app/',
+    title: "Fylo Landing Page",
+    descripcion: '',
+    description: '',
+    repo: 'https://github.com/RodrigoSpano/Fylo-landing-frontEndMentor.git',
+    tech: []
   },
 ]

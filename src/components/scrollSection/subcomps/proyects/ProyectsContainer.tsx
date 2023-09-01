@@ -3,6 +3,7 @@ import { useLangStore } from '../../../../zustand/languageStore'
 import {proyectsDB} from '../../../../utils/db'
 import { dbProyects } from '../../../../utils/interfaces'
 import ProyectCard from './subcmps/ProyectCard'
+import ProjectModal from './subcmps/ProjectsModal'
 
 const ProyectsContainer: React.FC = () => {
   const {language} = useLangStore()
@@ -11,9 +12,10 @@ const ProyectsContainer: React.FC = () => {
       <h4 className='text-2xl font-kanit text-[#1C1f19] dark:text-[#11181C] dark:opacity-70 font-bold'>{language === 'en' ? 'Projects' : 'Proyectos'}</h4>
       <div className='flex flex-col gap-5'>
         {
-          proyectsDB?.map((el: dbProyects) => <ProyectCard key={Math.random()} data={el} />)
+          proyectsDB.slice(0,4)?.map((el: dbProyects) => <ProyectCard key={Math.random()} data={el} />)
         }
-      </div>
+      </div> 
+      <ProjectModal title={language === 'en' ? 'View all' : 'See all'} />
     </div>
   )
 }
