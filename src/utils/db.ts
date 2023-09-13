@@ -23,16 +23,18 @@ export const proyectsDB: dbProyects[] = [
     description: "Development of a personal finance application that allows users to record their monthly income and expenses, automate expenses, record investments, set savings goals, view news and much more. In particular, my responsibilities included implementing user authentication and authorization, as well as automating and managing transactions and global state. Thanks to my contribution, the application has innovative features and an improved user experience",
     descripcion: 'Desarrollo de una aplicación de finanzas personales que permite a los usuarios registrar sus ingresos y gastos mensuales, automatizar gastos, registrar inversiones, establecer metas de ahorro, ver noticias y mucho más. En particular, mis responsabilidades incluyeron implementar la autenticación y autorización de usuarios, así como automatizar y gestionar transacciones y el estado global. Gracias a mi contribución, la aplicación cuenta con características innovadoras y una mejor experiencia de usuario.',
     repo: 'https://github.com/RodrigoSpano/pig_commander_client.git',
+    repo2: 'https://github.com/RodrigoSpano/pig_commander_api.git',
     tech: ['NextJs', 'Express', 'PostgreSQL', 'Redux', 'TailwindCSS']
   },
   {
-    image: '/assets/proyects/nftlanding.jpeg',
-    deploy: 'https://nfts-collection-landing.vercel.app/',
-    title: "NFTs marketplace Landing page",
-    descripcion: 'Landing page para visualizar los diferentes precios en ETH de una coleccion de NFTs, utilice animaciones 2D y modelos 3D.',
-    description: 'Landing page to display the different prices in ETH of a collection of NFTs, using 2D animations and 3D models.',
-    repo: 'https://github.com/RodrigoSpano/ROOTS-challenge.git',
-    tech: ['NextJs', 'ThreeJs', 'TailwindCSS', 'Framer-motion']
+    image: '/assets/proyects/spotify.jpeg',
+    deploy: null,
+    title: "Spotify Profile Panel",
+    descripcion: 'Small app where you can see your most listened artists and songs of the year, also your playlists, filter and order them.',
+    description: 'Applicacion web donde puedes visualizar tus artistas y canciones mas escuchadas durante el año, tambien ver tus playlist, ordenarlas y filtrarlas',
+    repo: 'https://github.com/RodrigoSpano/spotify_panel_client',
+    repo2: 'https://github.com/RodrigoSpano/spotify_panel_api',
+    tech: ['NextJs', 'Zustand', 'Spotify-api', 'ExpressJs']
   },
   {
     image: null,
@@ -51,6 +53,15 @@ export const proyectsDB: dbProyects[] = [
     descripcion: 'Aplicacion backend para una tienda online desarrollada con Express y BongoDB',
     repo: 'https://github.com/RodrigoSpano/ecommerce-backend.git',
     tech: ['ExpressJs', 'javascript', 'MongoDB', 'Passport']
+  },
+  {
+    image: '/assets/proyects/nftlanding.jpeg',
+    deploy: 'https://nfts-collection-landing.vercel.app/',
+    title: "NFTs marketplace Landing page",
+    descripcion: 'Landing page para visualizar los diferentes precios en ETH de una coleccion de NFTs, utilice animaciones 2D y modelos 3D.',
+    description: 'Landing page to display the different prices in ETH of a collection of NFTs, using 2D animations and 3D models.',
+    repo: 'https://github.com/RodrigoSpano/ROOTS-challenge.git',
+    tech: ['NextJs', 'ThreeJs', 'TailwindCSS', 'Framer-motion']
   },
   {
     image: '/assets/proyects/weather_app.jpeg',

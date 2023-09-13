@@ -62,7 +62,7 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
       >
         {
           data.image ? 
-          <img src={data.image} alt={data.title} className={`w-[115px] drop-shadow-lg object-contain dark:opacity-75 ${up && 'dark:opacity-100'} transition-all duration-300 ease-linear `} />
+          <img src={data.image} alt={data.title} className={`w-[115px] drop-shadow-lg object-contain dark:opacity-75 ${up && 'dark:opacity-100'} rounded-md transition-all duration-300 ease-linear `} />
           : null
         }
         {/* //card body */}
@@ -82,6 +82,12 @@ const ProyectCard = ({data}: {data: dbProyects}) => {
                     <motion.a target='_blank' href={data.repo} whileHover={{scale:1.2, translateY: -5}} className='cursor-pointer'>
                     <BsGithub />
                   </motion.a>
+                  {
+                    data.repo2 &&
+                    <motion.a target='_blank' href={data.repo2} whileHover={{scale:1.2, translateY: -5}} className='cursor-pointer'>
+                    <BsGithub />
+                  </motion.a>
+                    }
           </div>
 
           <a target='_blank' href={data.deploy ? data.deploy : data.repo} className={`${up && 'dark:text-white'} transition-all duration-300 ease-linear text-[#11181c] dark:text-[#ddd1c3] lg:dark:text-black text-sm font-medium`}>{language === 'en' ? data.description : data.descripcion}</a>

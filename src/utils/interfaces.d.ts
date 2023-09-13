@@ -20,4 +20,5 @@ export interface dbProyects {
   descripcion: string,
   tech: string[]
   repo:string
+  repo2?:string
 }
