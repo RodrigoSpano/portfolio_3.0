@@ -41,7 +41,17 @@ export default function ProjectModal({title}: {title:string}) {
                     proyectsDB.map((el: dbProyects, i: number) => (
                       <TableRow key={i}>
                         <TableCell>{ language === 'en' ? el.title : (el.titulo ? el.titulo : el.title) }</TableCell>
-                        <TableCell><a className="flex gap-1 items-center text-sky-500 font-medium" href={el.repo} target="_blank">{language === 'en' ? 'Repository' : ' Repositorio'} <FiArrowUpRight /> </a> </TableCell>
+                        <TableCell>
+                          {
+                            el.repo2 ? 
+                            <>
+                            <a className="flex gap-1 items-center text-sky-500 font-medium" href={el.repo} target="_blank">{language === 'en' ? 'Repository 1' : 'Repositorio 1'} <FiArrowUpRight /> </a> 
+                            <a className="flex gap-1 items-center text-sky-500 font-medium" href={el.repo2} target="_blank">{language === 'en' ? 'Repository 2' : 'Repositorio 2'} <FiArrowUpRight /> </a> 
+                            </>
+                            :
+                          <a className="flex gap-1 items-center text-sky-500 font-medium" href={el.repo} target="_blank">{language === 'en' ? 'Repository' : ' Repositorio'} <FiArrowUpRight /> </a> 
+                          }
+                          </TableCell>
                         <TableCell>{el.deploy ? <a className="flex gap-1 items-center text-sky-500 font-medium" href={el.deploy} target="_blank"> {language === 'en' ? 'Deploy' : 'Despliegue'} <FiArrowUpRight /> </a> : 
                         <span className="text-medium text-red-400">{language === 'en' ? 'Unavailable' : 'No disponible'}</span>
                         }</TableCell>
