@@ -30,8 +30,8 @@ export const proyectsDB: dbProyects[] = [
     image: '/assets/proyects/spotify.jpeg',
     deploy: null,
     title: "Spotify Profile Panel",
-    descripcion: 'Small app where you can see your most listened artists and songs of the year, also your playlists, filter and order them.',
-    description: 'Applicacion web donde puedes visualizar tus artistas y canciones mas escuchadas durante el año, tambien ver tus playlist, ordenarlas y filtrarlas',
+    description: 'Small app where you can see your most listened artists and songs of the year, also your playlists, filter and order them.',
+    descripcion: 'Applicacion web donde puedes visualizar tus artistas y canciones mas escuchadas durante el año, tambien ver tus playlist, ordenarlas y filtrarlas',
     repo: 'https://github.com/RodrigoSpano/spotify_panel_client',
     repo2: 'https://github.com/RodrigoSpano/spotify_panel_api',
     tech: ['NextJs', 'Zustand', 'Spotify-api', 'ExpressJs']
