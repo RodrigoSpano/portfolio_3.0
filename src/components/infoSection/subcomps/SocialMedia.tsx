@@ -21,7 +21,7 @@ const SocialMedia: React.FC = () => {
       </div>
       <Tooltip content={language === 'en' ? 'Download Resume':'Descargar curriculum'} className='dark:bg-[#A3A3A3] opacity-75 text-[#1f1c19] '>
         <Button size='sm' className='text-[#1f1c19] dark:text-[#fff] text-2xl bg-transparent border-none outline-none '>
-          <a download href='/assets/RodrigoSpano-Fullstack-dev.pdf'>
+          <a download href='/assets/rodrigo-spano-software-developer.pdf'>
           <BsDownload />
           </a>
         </Button>
