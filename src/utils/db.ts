@@ -2,8 +2,21 @@ import { dbExperience, dbProyects } from "./interfaces";
 
 export const experienceDb: dbExperience[] = [
   {
-    period: "Aug-Sept",
-    periodo: "Ago-Sept",
+    period: "Nov",
+    periodo: "Nov",
+    title: "Back End Developer",
+    titulo: "Desarrollador Back End",
+    position: "Doctor Qali",
+    posicion: "Doctor Qali",
+    description:
+      "Development of a backend system for a Whatsapp Bot that allows scheduling medical appointments with specialists in various fields.",
+    descripcion:
+      "Desarrollo de un sistema de backend para un Bot de Whatsapp que permite agendar citas médicas con especialistas en diversas áreas.",
+    tech: ["NestJs", "MongoDB", "typescript"],
+  },
+  {
+    period: "Oct-Nov",
+    periodo: "Oct-Nov",
     title: "Techno Apes VOD app MVP",
     titulo: "Techno Apes VOD app MVP",
     position: "Web development",
