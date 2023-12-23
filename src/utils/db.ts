@@ -14,7 +14,7 @@ export const experienceDb: dbExperience[] = [
   },
   {
     period: "Nov",
-    periodo: "Nov",
+    periodo: "Dec",
     title: "Back End Developer",
     titulo: "Desarrollador Back End",
     position: "Doctor Qali",
@@ -30,8 +30,8 @@ export const experienceDb: dbExperience[] = [
     periodo: "Oct-Nov",
     title: "Techno Apes VOD app MVP",
     titulo: "Techno Apes VOD app MVP",
-    position: "Web development",
-    posicion: "Desarrollador Web",
+    position: "Web development internship",
+    posicion: "Desarrollador Web pasantia",
     description:
       "Development of an on-demand video application for customer training on the company's services. We work with cloud services (AWS) using the serverless framework, Node.js, React.js, and TypeScript.",
     descripcion:
