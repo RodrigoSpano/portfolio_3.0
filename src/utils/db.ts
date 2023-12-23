@@ -2,6 +2,17 @@ import { dbExperience, dbProyects } from "./interfaces";
 
 export const experienceDb: dbExperience[] = [
   {
+    period: "Dec",
+    periodo: "Dic",
+    title: "Frontend Software Development",
+    titulo: "Desarrollador Frontend",
+    position: "Aximo-Tech",
+    posicion: "Aximo-Tech",
+    description: "Frontend development of company's CRM version 2.0 ",
+    descripcion: "Desarrollo de la version 2.0 del CRM de la empresa",
+    tech: ["Astro", "React.js", "typescript"],
+  },
+  {
     period: "Nov",
     periodo: "Nov",
     title: "Back End Developer",
