@@ -8,9 +8,11 @@ export const experienceDb: dbExperience[] = [
     titulo: "Desarrollador Frontend",
     position: "Aximo-Tech",
     posicion: "Aximo-Tech",
-    description: "Frontend development of company's CRM version 2.0 ",
-    descripcion: "Desarrollo de la version 2.0 del CRM de la empresa",
-    tech: ["Astro", "React.js", "typescript"],
+    descripcion:
+      "Como Desarrollador Frontend en Aximo-tech, me especializo en la creación y optimización de interfaces de usuario innovadoras, empleando un conjunto diverso de tecnologías como Astro, React.js, TypeScript, TailwindCSS, Zustand, Playwright y Storybook. Actualmente, lidero el desarrollo de la versión 2.0 del Software de la empresa, un proyecto que exige una colaboración estrecha con los equipos de backend y diseño para asegurar una implementación fluida y eficiente.",
+    description:
+      "As a Frontend Developer at Aximo-tech, I specialize in creating and optimizing innovative user interfaces, utilizing a diverse set of technologies such as Astro, React.js, TypeScript, TailwindCSS, Zustand, Playwright, and Storybook. Currently, I lead the development of the company's CRM version 2.0, a project that requires close collaboration with backend and design teams to ensure a seamless and efficient implementation.",
+    tech: ["Astro", "Next.js", "typescript", "Zustand", "TailwindCss"],
   },
   {
     period: "Nov",
