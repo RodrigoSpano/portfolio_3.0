@@ -8,7 +8,10 @@ import {
   SiRedux,
   SiSequelize,
   SiTypescript,
+  SiTerraform,
+  SiDocker,
 } from 'react-icons/si';
+import { FaAws, FaPython } from 'react-icons/fa';
 import {
   BiLogoNodejs,
   BiLogoTailwindCss,
@@ -36,6 +39,22 @@ const skills: skillsTypes[] = [
     docu: 'https://www.typescriptlang.org/',
     icon: <SiTypescript />,
   },
+  {
+    name: 'python',
+    docu: 'https://docs.python.org/3/',
+    icon: <FaPython />,
+  },
+  {
+    name: 'terraform',
+    docu: 'https://registry.terraform.io/',
+    icon: <SiTerraform />,
+  },
+  {
+    name: 'aws',
+    docu: 'https://docs.aws.amazon.com/',
+    icon: <FaAws />,
+  },
+  { name: 'docker', docu: 'https://docs.docker.com/', icon: <SiDocker /> },
   { name: 'react', docu: 'https://react.dev/', icon: <FaReact /> },
   { name: 'nextJs', docu: 'https://nextjs.org/docs', icon: <TbBrandNextjs /> },
   { name: 'redux', docu: 'https://redux-toolkit.js.org/', icon: <SiRedux /> },

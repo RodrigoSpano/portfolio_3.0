@@ -2,8 +2,21 @@ import { dbExperience, dbProyects } from './interfaces';
 
 export const experienceDb: dbExperience[] = [
   {
-    period: 'Dec - now',
-    periodo: 'Dic - ahora',
+    period: 'Aug 2024 - Now',
+    periodo: 'Ago 2024 - Ahora',
+    title: 'DevOps',
+    titulo: 'DevOps',
+    position: 'Kopius Inc',
+    posicion: 'Kopius Inc',
+    descripcion:
+      'Implementación de infraestructura como código (IaC) utilizando **Terraform** para la provisión y gestión de recursos en la nube. Configuración y mantenimiento de VPN Site-to-Site para interconectar la infraestructura en la nube con centros de datos on-premise, garantizando una comunicación segura y eficiente. Implementación de Transit Gateways para facilitar la conexión de VPCs en diferentes regiones de AWS, optimizando la conectividad entre redes dispersas. Creación y gestión de pipelines de CI/CD para automatizar el proceso de despliegue de imágenes de Docker modificadas a repositorios, asegurando actualizaciones rápidas y seguras. Automatización de la gestión de instancias y configuraciones de servidores mediante Ansible, mejorando la eficiencia operativa y reduciendo los errores manuales. Monitoreo de metricas del sistema, metricas de apache y logs de apache, utilizando grafana y sus respectivos agentes para colectar metricas.',
+    description:
+      'Implementation of Infrastructure as Code (IaC) using Terraform for provisioning and managing cloud resources. Configuration and maintenance of Site-to-Site VPNs to interconnect cloud infrastructure with on-premise data centers, ensuring secure and efficient communication. Implementation of Transit Gateways to facilitate the connection of VPCs across different AWS regions, optimizing connectivity between dispersed networks. Creation and management of CI/CD pipelines to automate the process of deploying modified Docker images to repositories, ensuring fast and secure updates. Automation of instance management and server configurations using Ansible, improving operational efficiency and reducing manual errors. Monitoring of system metrics, Apache metrics, and Apache logs using Grafana and its respective agents to collect metrics.',
+    tech: ['AWS', 'Terraform', 'CI/CD', 'Docker', 'Kubernetes', 'Bash'],
+  },
+  {
+    period: 'Dec 2023 - June 2024',
+    periodo: 'Dic 2023 - Junio 2024',
     title: 'Frontend Software Development',
     titulo: 'Desarrollador Frontend',
     position: 'Aximo-Tech',
@@ -15,8 +28,8 @@ export const experienceDb: dbExperience[] = [
     tech: ['Astro', 'Next.js', 'typescript', 'Zustand', 'TailwindCss'],
   },
   {
-    period: 'Nov',
-    periodo: 'Dec',
+    period: 'Nov - Dec',
+    periodo: 'Nov - Dic',
     title: 'Back End Developer',
     titulo: 'Desarrollador Back End',
     position: 'Doctor Qali',
@@ -32,8 +45,8 @@ export const experienceDb: dbExperience[] = [
     periodo: 'Oct-Nov',
     title: 'Techno Apes VOD app MVP',
     titulo: 'Techno Apes VOD app MVP',
-    position: 'Web development internship',
-    posicion: 'Desarrollador Web pasantia',
+    position: 'Software development internship',
+    posicion: 'Desarrollador de software pasantia',
     description:
       "Development of an on-demand video application for customer training on the company's services. We work with cloud services (AWS) using the serverless framework, Node.js, React.js, and TypeScript.",
     descripcion:
